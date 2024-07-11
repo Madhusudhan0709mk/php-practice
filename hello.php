@@ -50,6 +50,37 @@ echo var_dump($names);
   hello();
   hello();
   ?>
+<!-- php classes and objects -->
+ 
   <a href="demo/demo.php" >demo page</a>
+  <br>
+  <?php 
+  class Solut{
+   public $namess;
+   public $extra = "extra check";
+   function defin($name){
+      echo $name;
+   }
+   // getters and setteers in php
+   function set_name($namess){
+    $this->namess=$namess;
+   }
+
+   function get_name(){
+      return $this->namess;
+   }
+  }
+  $obj = new Solut;
+  $obj->defin("mad");
+  $obj->set_name("demo_name");
+  $output = $obj->get_name();
+  echo $output;
+  echo $obj->extra;
+  ?>
+
+
+
+
+
 </body>
 </html>
